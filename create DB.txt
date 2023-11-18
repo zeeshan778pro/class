@@ -1,0 +1,9 @@
+CREATE DATABASE use file_upload_db;
+grant all on file_upload_db.* to 'username'@'localhost' identified by "password";
+ 
+USE use file_upload_db;
+
+CREATE TABLE backgrounds (   id INT AUTO_INCREMENT PRIMARY KEY,   file_name VARCHAR(255) NOT NULL );
+
+select * from backgrounds;
+drop table backgrounds;

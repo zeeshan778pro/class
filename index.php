@@ -1,11 +1,13 @@
-
-<?php
-
-// Show all information, defaults to INFO_ALL
-phpinfo();
-
-// Show just the module information.
-// phpinfo(8) yields identical results.
-phpinfo(INFO_MODULES);
-
-?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Background</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+    </form>
+</body>
+</html>
